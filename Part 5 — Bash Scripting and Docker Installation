@@ -1,0 +1,33 @@
+
+---
+
+### ⚙️ **Part 5 — Bash Scripting and Docker Installation (`Part5_Bash_Scripting_and_Docker_Installation/README.md`)**
+```markdown
+# Part 5: Bash Scripting and Docker Installation
+
+Created a script named `install_docker.sh` to install and start Docker.
+
+```bash
+#!/bin/bash
+sudo apt update -y
+sudo apt install docker.io -y
+sudo systemctl enable docker
+sudo systemctl start docker
+Made it executable and ran it:
+
+chmod +x install_docker.sh
+./install_docker.sh
+
+
+📸 Screenshots: input.png, output.png
+
+
+
+**File:** `Part5_Bash_Scripting_and_Docker_Installation/install_docker.sh`
+```bash
+#!/bin/bash
+sudo apt update -y
+sudo apt install docker.io -y
+sudo systemctl enable docker
+sudo systemctl start docker
+
