@@ -4,3 +4,7 @@
 - Changed shell prompt from `$` to `#` using:
   ```bash
   export PS1="# "
+
+Screenshot: SSH Access and Shell Customization.png
+
+
