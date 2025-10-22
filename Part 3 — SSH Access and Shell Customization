@@ -1,0 +1,6 @@
+# Part 3: SSH Access and Shell Customization
+
+- Connected to EC2 instance using SSH.
+- Changed shell prompt from `$` to `#` using:
+  ```bash
+  export PS1="# "
