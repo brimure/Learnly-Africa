@@ -1,0 +1,19 @@
+### 👤 **Part 4 — User Management (`Part4_User_Management/README.md`)**
+```markdown
+# Part 4: User Management
+
+- Created user **learnly**:
+  ```bash
+  sudo adduser learnly
+
+Granted full permissions:
+
+sudo chmod -R 700 /home/learnly
+
+
+Switched to new user:
+
+su - learnly
+
+
+ Screenshot: User Management.png
