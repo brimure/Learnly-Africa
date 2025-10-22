@@ -1,0 +1,7 @@
+# Part 2: AWS EC2 Setup
+
+- Logged in to AWS Console.
+- Created EC2 instance named **learnly** using Lab 1 (Sandbox).
+- Instance is running successfully.
+
+📸 Screenshot: `new EC2 instance.png`
