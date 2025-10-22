@@ -1,0 +1,26 @@
+# Part 6: Docker Configuration
+
+Pulled Docker images for WordPress and MySQL.
+
+```bash
+sudo docker pull mysql:latest
+sudo docker pull wordpress:latest
+
+Ran containers:
+
+sudo docker run -d --name mysql-container \
+  -e MYSQL_ROOT_PASSWORD=StrongPass123 \
+  -e MYSQL_DATABASE=wordpress \
+  mysql:latest
+
+sudo docker run -d --name wordpress-container \
+  -p 80:80 \
+  -e WORDPRESS_DB_HOST=mysql-container:3306 \
+  -e WORDPRESS_DB_USER=root \
+  -e WORDPRESS_DB_PASSWORD=StrongPass123 \
+  -e WORDPRESS_DB_NAME=wordpress \
+  --link mysql-container:mysql \
+  wordpress:latest
+Accessed WordPress setup via EC2 Public IP.
+
+ Screenshot: wordpress page.png
